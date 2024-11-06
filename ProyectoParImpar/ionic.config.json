@@ -1,0 +1,7 @@
+{
+  "name": "ProyectoParImpar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

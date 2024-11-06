@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Verificar Par o Impar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h2 class="title">Introduce un número para verificar:</h2>
+    
+    <input [(ngModel)]="num" type="number" placeholder="Introduce tu número" class="input-guess">
+    
+    <button (click)="compruebaNumero()" class="btn-check">Comprobar</button>
+    
+    <p *ngIf="resultado !== '...'" class="hint">{{ resultado }}</p>
+
+    <ion-button expand="block" (click)="restartGame()" color="danger" class="btn-restart">
+      Reiniciar
+    </ion-button>
+  </div>
+</ion-content>
