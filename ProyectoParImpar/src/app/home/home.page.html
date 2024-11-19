@@ -14,6 +14,10 @@
     
     <p *ngIf="resultado !== '...'" class="hint">{{ resultado }}</p>
 
+    <!-- Elementos duplicados  -->
+    <p class="vertical-result">Resultado para orientación vertical: {{ resultado }}</p>
+    <p class="horizontal-result">Resultado para orientación horizontal: {{ resultado }}</p>
+
     <ion-button expand="block" (click)="restartGame()" color="danger" class="btn-restart">
       Reiniciar
     </ion-button>
